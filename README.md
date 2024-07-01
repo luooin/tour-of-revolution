@@ -38,9 +38,11 @@
 2.运行流程
 本项目需要将下面的路径更换成admin前端“\src\assets\images\”的绝对路径
 
-![image](https://github.com/luooin/tour-of-revolution/assets/85004172/4d7fb775-4fb7-4a85-a0c5-2d8981c2cbb6)
+![image](https://github.com/luooin/tour-of-revolution/assets/85004172/ded48122-e38b-45c7-b0c2-f578b82ef91b)
+
 
 即下面的绝对路径
+![image](https://github.com/luooin/tour-of-revolution/assets/85004172/55af4ee7-a067-4107-acfd-b2fbe2af7ed9)
 
 
 部署详情可以查看这篇csdn博客：http://t.csdnimg.cn/kpuxS
