@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hzw.mapper.OrderMapper">
+
+    <!-- 通用查询映射结果 -->
+<!--    <resultMap id="BaseResultMap" type="com.hzw.entity.Order">-->
+<!--        <id column="ID" property="id" />-->
+<!--        <result column="ADD_USER_ID" property="addUserId" />-->
+<!--        <result column="ADD_TIME" property="addTime" />-->
+<!--        <result column="DELETE_STATUS" property="deleteStatus" />-->
+<!--        <result column="MODIFY_USER_ID" property="modifyUserId" />-->
+<!--        <result column="MODIFY_TIME" property="modifyTime" />-->
+<!--        <result column="USER_ID" property="userId" />-->
+<!--        <result column="USER_NAME" property="userName" />-->
+<!--        <result column="PRODUCT_ID" property="productId" />-->
+<!--        <result column="PRODUCT_NAME" property="productName" />-->
+<!--        <result column="FEE" property="fee" />-->
+<!--        <result column="PRODUCT_TYPE" property="productType" />-->
+<!--        <result column="STATE" property="state" />-->
+<!--        <result column="ORDER_CODE" property="orderCode" />-->
+<!--        <result column="ORDER_TIME" property="orderTime" />-->
+<!--        <result column="SETOFF_TIME" property="setoffTime" />-->
+<!--        <result column="LINK_TEL" property="linkTel" />-->
+<!--        <result column="PEOPLE_COUNT" property="peopleCount" />-->
+<!--        <result column="REQUIREMENT" property="requirement" />-->
+<!--        <result column="IC_CODE" property="icCode" />-->
+<!--        <result column="IMG_URL" property="imgUrl" />-->
+<!--    </resultMap>-->
+    <resultMap id="BaseResultMap" type="com.hzw.entity.Order">
+        <id column="ID" property="id" javaType="java.lang.Long" />
+        <result column="ADD_USER_ID" property="addUserId" javaType="java.lang.Long" />
+        <result column="ADD_TIME" property="addTime" javaType="java.util.Date" />
+        <result column="DELETE_STATUS" property="deleteStatus" javaType="java.lang.Integer" />
+        <result column="MODIFY_USER_ID" property="modifyUserId" javaType="java.lang.Long" />
+        <result column="MODIFY_TIME" property="modifyTime" javaType="java.util.Date" />
+        <result column="USER_ID" property="userId" javaType="java.lang.Long" />
+        <result column="USER_NAME" property="userName" javaType="java.lang.String" />
+        <result column="PRODUCT_ID" property="productId" javaType="java.lang.Long" />
+        <result column="PRODUCT_NAME" property="productName" javaType="java.lang.String" />
+        <result column="FEE" property="fee" javaType="java.lang.Double" />
+        <result column="PRODUCT_TYPE" property="productType" javaType="java.lang.Integer" />
+        <result column="STATE" property="state" javaType="java.lang.Integer" />
+        <result column="ORDER_CODE" property="orderCode" javaType="java.lang.String" />
+        <result column="ORDER_TIME" property="orderTime" javaType="java.util.Date" />
+        <result column="SETOFF_TIME" property="setoffTime" javaType="java.util.Date" />
+        <result column="LINK_TEL" property="linkTel" javaType="java.lang.String" />
+        <result column="PEOPLE_COUNT" property="peopleCount" javaType="java.lang.Integer" />
+        <result column="REQUIREMENT" property="requirement" javaType="java.lang.String" />
+        <result column="IC_CODE" property="icCode" javaType="java.lang.String" />
+        <result column="IMG_URL" property="imgUrl" javaType="java.lang.String" />
+        <result column="refund_time" property="refundTime" javaType="java.util.Date" />
+        <result column="pay_time" property="payTime" javaType="java.util.Date"/>
+        <result column="day" property="day" javaType="java.lang.Integer" />
+        <result column="name" property="name" javaType="java.lang.String" />
+
+
+    </resultMap>
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        ID, ADD_USER_ID, ADD_TIME, DELETE_STATUS, MODIFY_USER_ID, MODIFY_TIME, USER_ID, USER_NAME, PRODUCT_ID, PRODUCT_NAME, FEE, PRODUCT_TYPE, STATE, ORDER_CODE, ORDER_TIME, SETOFF_TIME, LINK_TEL, PEOPLE_COUNT, REQUIREMENT, IC_CODE, IMG_URL
+    </sql>
+
+</mapper>
